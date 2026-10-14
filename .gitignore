@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+backend/uploads/foods/*
+backend/uploads/promotions/*
+!backend/uploads/foods/.gitkeep
+!backend/uploads/promotions/.gitkeep
+.DS_Store
