@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { api } from '../api/client.js';
 import useAsync from '../hooks/useAsync.js';
 
-const INTERVAL = 5000;
+const INTERVAL = 5001;
 
 function SlideLink({ href, className, children, tabIndex }) {
   if (/^https?:\/\//.test(href)) {

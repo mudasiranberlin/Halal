@@ -4,7 +4,7 @@
 import sharp from 'sharp';
 import { getOpenStatus } from '../src/utils/openStatus.js';
 
-const BASE = process.env.API_URL || 'http://localhost:5000';
+const BASE = process.env.API_URL || 'http://localhost:5001';
 const ORIGIN = process.env.CLIENT_URL || 'http://localhost:5173';
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@test.local';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'AdminPass123!x';

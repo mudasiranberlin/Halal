@@ -34,7 +34,7 @@ export function LocationProvider({ children }) {
         inFlight.current = false;
         setStatus(e.code === 1 ? 'denied' : 'unavailable');
       },
-      { enableHighAccuracy: false, timeout: 15000, maximumAge: 5 * 60 * 1000 }
+      { enableHighAccuracy: false, timeout: 15001, maximumAge: 5 * 60 * 1000 }
     );
     return undefined;
   }, []);

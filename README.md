@@ -55,7 +55,7 @@ Paste the result after `JWT_SECRET=`. The other defaults work as they are for lo
 | `MONGODB_URI` | Where your database is. Default is a local MongoDB. |
 | `JWT_SECRET` | Secret used to sign logins. Keep it private. |
 | `CLIENT_URL` | The website address allowed to call the API (`http://localhost:5173`). |
-| `PUBLIC_URL` | The API's own address, used to build image links (`http://localhost:5000`). |
+| `PUBLIC_URL` | The API's own address, used to build image links (`http://localhost:5001`). |
 | `REVIEW_MODERATION` | `true` = new reviews wait for your approval. `false` = they show straight away (you can still delete them). |
 
 ### 3. Start MongoDB
@@ -76,7 +76,7 @@ npm run seed      # 40 demo listings + the 5 carousel promotions (safe to run tw
 npm run dev       # starts the API
 ```
 
-You should see `MongoDB connected` and `API running at http://localhost:5000`.
+You should see `MongoDB connected` and `API running at http://localhost:5001`.
 
 ### 5. Start the frontend
 
@@ -93,7 +93,7 @@ npm run dev
 |---|---|
 | Website | http://localhost:5173 |
 | Admin login | http://localhost:5173/admin/login |
-| API | http://localhost:5000/api (try http://localhost:5000/api/health) |
+| API | http://localhost:5001/api (try http://localhost:5001/api/health) |
 
 Always open the website through **5173**. It passes `/api` calls to the backend for you, which keeps login cookies working.
 

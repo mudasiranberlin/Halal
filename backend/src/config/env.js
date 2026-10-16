@@ -40,11 +40,11 @@ const list = (v, fallback) =>
 
 export const env = {
   isProd,
-  port: Number(process.env.PORT) || 5000,
+  port: Number(process.env.PORT) || 5001,
   mongoUri: process.env.MONGODB_URI,
   jwtSecret: process.env.JWT_SECRET,
   clientUrls: list(process.env.CLIENT_URL, 'http://localhost:5173'),
-  publicUrl: (process.env.PUBLIC_URL || `http://localhost:${process.env.PORT || 5000}`).replace(/\/+$/, ''),
+  publicUrl: (process.env.PUBLIC_URL || `http://localhost:${process.env.PORT || 5001}`).replace(/\/+$/, ''),
   cookieSameSite: ['lax', 'strict', 'none'].includes(process.env.COOKIE_SAMESITE) ? process.env.COOKIE_SAMESITE : 'lax',
   reviewModeration: process.env.REVIEW_MODERATION === 'true',
   cloudinary, // null = save photos on this server's disk

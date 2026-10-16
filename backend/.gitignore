@@ -1,5 +1,6 @@
 node_modules
 .env
+.env.example
 uploads/foods/*
 uploads/promotions/*
 !uploads/foods/.gitkeep
